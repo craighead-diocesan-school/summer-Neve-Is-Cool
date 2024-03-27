@@ -17,7 +17,7 @@
       <li>We hosted 6 Barbecues - in about a 2 week time period</li>
       <li>Went to Queenstown</li>
     </ul>
-    <div>
+    <div class="photos">
       <img src="Cromwell Pool.jpg" />
       <img src="Mountains by road.jpg" />
       <img src="Plane.jpg" />
@@ -57,7 +57,6 @@
 
   p {
     font-family: sans-serif;
-    /* margin: 5%; */
     color: aquamarine;
     font-size: 1em;
   }
@@ -106,7 +105,7 @@
     text-align: right;
   }
 
-  div {
+  .photos {
     display: flex;
   }
 
@@ -114,10 +113,20 @@
     body {
       display: grid;
       grid:
-        "  .  h   .   " auto
-        " .    m    .  " auto
-        " .    m    f  " auto
+        " .   h   .  " auto
+        " .   m   .  " auto
+        " .   f   .  " auto
         / 1fr 5fr 1fr;
     }
+  }
+
+  .photos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    width: 35rem;
+    height: 35rem;
   }
 </style>
