@@ -109,24 +109,25 @@
     display: flex;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     body {
       display: grid;
       grid:
         " .   h   .  " auto
         " .   m   .  " auto
-        " .   f   .  " auto
+        " .   i   .  " auto
+        " f   f   f  " auto
         / 1fr 5fr 1fr;
     }
-  }
 
-  .photos {
-    display: flex;
-    flex-direction: column;
-  }
+    .photos {
+      display: flex;
+      flex-direction: column;
+    }
 
-  img {
-    width: 35rem;
-    height: 35rem;
+    img {
+      width: 35em;
+      height: 35em;
+    }
   }
 </style>
