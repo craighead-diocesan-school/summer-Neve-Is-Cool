@@ -112,11 +112,12 @@
 
   @media only screen and (max-width: 600px) {
     body {
-      display: flex;
-      flex-direction: column;
-    }
-    h2 {
-      /* font-size: larger; */
+      display: grid;
+      grid:
+        "  .  h   .   " auto
+        " .    m    .  " auto
+        " .    m    f  " auto
+        / 1fr 5fr 1fr;
     }
   }
 </style>
